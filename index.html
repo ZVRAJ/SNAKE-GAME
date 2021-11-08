@@ -2,20 +2,25 @@
     <meta charset="UTF-8">
     <title>SNAKE</title>
     <link rel="stylesheet" href="snake.css">
-
-    <!-- the MAIN.CSS file is linked here -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Press+Start+2P&display=swap');
+        </style>
 </head>
 
 <body>
 
       <div class="container">
+        <div id=title>
+            <h2>SNAKE</h2>
+            <div>
+                <h2 id="prompt">M O V E  T O  S T A R T</h2>
+              </div>
           <canvas id="game" width="420" height="420"></canvas>
-          <div>
+          </div>
+          <div id="text">
             <h2>SCORE
             </h2>
             <span id="scoredisplay">00</span>
-          </div>
-          <div>
             <h2>MAX
             </h2>
             <span id="maxdisplay">00</span>

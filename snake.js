@@ -92,6 +92,14 @@ const stopGame = () => {
   setTimeout(showResult, 500);
 };
 
+// SHOW RESULT
+const showResult = () => {
+  clearCanvas();
+  showScore();
+  ctx.fillText('Press r to restart');
+  ctx.font = `bold ${box * 3}px ${font}`;
+};
+
 // SPACEBAR TO RESTART
 const restart = () => {
   clearInterval(game);

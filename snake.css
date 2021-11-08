@@ -1,3 +1,15 @@
+body {
+    height: 100%;
+    color: #6e7888;
+  }
+  body {
+    background-color: #222738;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6e7888;
+  }
+
   .container {
     display: flex;
     width: 100%;
@@ -5,4 +17,39 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+  }
+
+  #text {
+    font-family: 'Odibee Sans', cursive;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    flex-flow: column;
+    transform: rotate(270deg);
+  }
+
+  #maxdisplay, #scoredisplay {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 45px;
+    font-weight: 800;
+    color: #A8C0CE;
+    
+  }
+
+  #title {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    flex-flow: column;
+    color: yellow;
+  }
+
+  #prompt {
+    font-family: 'Odibee Sans', cursive;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    flex-flow: column;
+    color: #DEA800;
   }
