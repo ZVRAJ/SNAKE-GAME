@@ -3,6 +3,7 @@ let canv = document.querySelector('#game');
 let display = canv.getContext('2d');
 let d_score = document.querySelector("#scoredisplay");
 let d_max = document.querySelector("#maxdisplay");
+let d_prompt = document.querySelector("#prompt");
 
 const box = 20;
 const width = box * 21;
@@ -22,6 +23,12 @@ let ms = 120;
 let score = 0;
 let record = 0;
 let dir = 'none';
+
+window.addEventListener("keydown", function(e) {
+  if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+      e.preventDefault();
+  }
+}, false);
 
 const loop = () => {
   clearCanvas();
@@ -95,9 +102,7 @@ const stopGame = () => {
 // SHOW RESULT
 const showResult = () => {
   clearCanvas();
-  showScore();
-  ctx.fillText('Press r to restart');
-  ctx.font = `bold ${box * 3}px ${font}`;
+  d_prompt.innerText = "P R E S S  S P A C E B A R  T O  T R Y  A G A I N";
 };
 
 // SPACEBAR TO RESTART
