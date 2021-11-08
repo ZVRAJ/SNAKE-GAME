@@ -25,7 +25,7 @@ let dir = 'none';
 
 const loop = () => {
   clearCanvas();
-  d_max.innerText = record;
+  d_max.innerText = record.toString().padStart(2, "0");
   apple();
 
   let [px, py] = [snake[0].x, snake[0].y];
